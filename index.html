@@ -57,6 +57,10 @@
     padding:0 28px;
   }
 
+  @media (max-width:480px){
+    .wrap{ padding:0 18px; }
+  }
+
   .icon{
     width:1em; height:1em;
     stroke:currentColor;
@@ -115,7 +119,11 @@
     gap:22px;
     font-family:'IBM Plex Mono', monospace;
     font-size:0.82rem;
+    overflow-x:auto;
+    scrollbar-width:none;
+    -webkit-overflow-scrolling:touch;
   }
+  nav.tabs::-webkit-scrollbar{ display:none; }
 
   nav.tabs a{
     text-decoration:none;
@@ -123,6 +131,14 @@
     padding:4px 2px;
     border-bottom:2px solid transparent;
     transition:color .15s ease, border-color .15s ease;
+    white-space:nowrap;
+    flex-shrink:0;
+  }
+
+  @media (max-width:760px){
+    .bar-inner{ padding:14px 18px; gap:14px; }
+    .wordmark{ font-size:0.95rem; }
+    nav.tabs{ gap:16px; font-size:0.78rem; }
   }
 
   nav.tabs a:hover, nav.tabs a.active{
@@ -709,8 +725,10 @@
 
   .block-head{
     display:flex;
-    align-items:baseline;
+    align-items:center;
     justify-content:space-between;
+    flex-wrap:wrap;
+    row-gap:10px;
     margin-bottom:38px;
     gap:20px;
   }
@@ -959,7 +977,7 @@
   }
 
   footer h2{
-    font-size:1.8rem;
+    font-size:clamp(1.5rem, 4.5vw, 1.8rem);
     margin:0 0 10px;
     max-width:18ch;
   }
@@ -1449,8 +1467,8 @@
             <span class="pill">Advanced Excel</span>
             <span class="pill">Basic SQL</span>
             <span class="pill">Power BI</span>
-            <span class="pill">Shopify</span>
             <span class="pill">Python</span>
+            <span class="pill">Shopify</span>
             <span class="pill">Tally Prime</span>
           </div>
         </div>
