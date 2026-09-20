@@ -495,9 +495,9 @@
   }
 
   .spotlight-intro{
-    max-width:60ch;
+    max-width:62ch;
     color:var(--ink-soft);
-    margin:0 0 34px;
+    margin:0 0 30px;
   }
 
   .spotlight-grid{
@@ -575,14 +575,8 @@
 
   .employer-name{ font-weight:600; }
   .employer-sub{ font-size:0.85rem; color:var(--muted); margin-top:2px; }
-
-  .product-label{
-    font-family:'IBM Plex Mono', monospace;
-    font-size:0.75rem;
-    color:var(--muted);
-    margin-bottom:14px;
-    display:flex; align-items:center; gap:7px;
-  }
+  .employer-sub a{ color:var(--amber-soft); text-decoration:underline; text-decoration-color:rgba(227,162,60,0.4); }
+  .employer-sub a:hover{ text-decoration-color:var(--amber-soft); }
 
   /* ---------- Section background rhythm ---------- */
 
@@ -653,18 +647,6 @@
 
   /* ---------- Cellecor company + appliance highlight ---------- */
 
-  .company-blurb{
-    max-width:66ch;
-    color:var(--ink-soft);
-    margin:0 0 30px;
-  }
-  .company-blurb a{
-    color:var(--amber-soft);
-    text-decoration:underline;
-    text-decoration-color:rgba(227,162,60,0.4);
-  }
-  .company-blurb a:hover{ text-decoration-color:var(--amber-soft); }
-
   .appliance-banner{
     border:1px solid var(--line);
     border-radius:var(--radius);
@@ -677,15 +659,8 @@
     font-family:'IBM Plex Mono', monospace;
     font-size:0.75rem;
     color:var(--amber-soft);
-    margin-bottom:8px;
+    margin-bottom:14px;
     display:flex; align-items:center; gap:7px;
-  }
-
-  .appliance-banner p{
-    color:var(--ink-soft);
-    max-width:64ch;
-    margin:0 0 20px;
-    font-size:0.95rem;
   }
 
   .appliance-tags{
@@ -1089,7 +1064,7 @@
   <div class="bar-inner">
     <div class="wordmark">
       <span class="mark"><svg class="icon" style="stroke:currentColor"><use href="#i-package"/></svg></span>
-      Shaista <span>Ansari</span>
+      Shaista Hussain Ansari
     </div>
     <nav class="tabs" id="tabs">
       <a href="#overview">Overview</a>
@@ -1266,26 +1241,12 @@
         <div class="employer-mark">CG</div>
         <div>
           <div class="employer-name">Cellecor Gadgets Limited</div>
-          <div class="employer-sub">Consumer electronics &amp; home appliances brand · New Delhi</div>
+          <div class="employer-sub"><a href="https://cellecor.com" target="_blank" rel="noopener">cellecor.com</a> · New Delhi — TVs, mobile, wearables, audio &amp; home appliances</div>
         </div>
       </div>
 
-      <p class="company-blurb reveal">
-        Cellecor Gadgets Limited (<a href="https://cellecor.com" target="_blank" rel="noopener">cellecor.com</a>)
-        designs and sells smart TVs, smartphones and mobile accessories, wearables
-        and audio under the Cellecor brand, and has been expanding fast into home
-        and kitchen appliances. I handle marketplace listings, cataloguing and
-        account operations across this catalogue — with a particular focus on
-        the home appliance range.
-      </p>
-
       <div class="appliance-banner reveal">
         <div class="a-label"><svg class="icon"><use href="#i-fan"/></svg>Focus area · Home appliance categories</div>
-        <p>
-          As Cellecor has scaled its home appliances line, I've taken on
-          listing, cataloguing and marketplace-compliance work across these
-          categories specifically:
-        </p>
         <div class="appliance-tags">
           <span class="tag"><svg class="icon" width="13" height="13"><use href="#i-fan"/></svg>Air fryers</span>
           <span class="tag"><svg class="icon" width="13" height="13"><use href="#i-iron"/></svg>Irons</span>
@@ -1298,44 +1259,36 @@
         </div>
       </div>
 
-      <div class="product-label reveal" style="margin-top:34px;"><svg class="icon"><use href="#i-tag"/></svg>Also across the wider Cellecor catalogue</div>
-      <div class="tag-row reveal" style="margin-bottom:34px;">
-        <span class="tag"><svg class="icon" width="13" height="13"><use href="#i-tv"/></svg>Smart TVs</span>
-        <span class="tag"><svg class="icon" width="13" height="13"><use href="#i-device"/></svg>Smartphones &amp; mobile accessories</span>
-        <span class="tag"><svg class="icon" width="13" height="13"><use href="#i-watch"/></svg>Wearables &amp; TWS</span>
-        <span class="tag"><svg class="icon" width="13" height="13"><use href="#i-headphones"/></svg>Audio &amp; earbuds</span>
-      </div>
-
-      <div class="spotlight-grid reveal">
+      <div class="spotlight-grid reveal" style="margin-top:34px;">
         <div class="spotlight-card">
           <span class="ic-circle"><svg class="icon"><use href="#i-users"/></svg></span>
-          <h3>Account health &amp; escalations</h3>
-          <p>Primary point of contact across 10+ marketplaces for account health, growth and compliance — resolving escalations before they hit ratings.</p>
+          <h3>Account health</h3>
+          <p>One point of contact across 10+ marketplaces.</p>
         </div>
         <div class="spotlight-card">
           <span class="ic-circle"><svg class="icon"><use href="#i-tag"/></svg></span>
-          <h3>Cataloguing &amp; listings</h3>
-          <p>End-to-end catalogue ownership: single and bulk uploads, product variations, SKU mapping and A+ Content.</p>
+          <h3>Cataloguing</h3>
+          <p>Uploads, variations, SKU mapping, A+ Content.</p>
         </div>
         <div class="spotlight-card">
           <span class="ic-circle"><svg class="icon"><use href="#i-megaphone"/></svg></span>
           <h3>SEO &amp; visibility</h3>
-          <p>Titles, bullet points, descriptions, keywords and attributes tuned to lift account-level search performance.</p>
+          <p>Titles, keywords &amp; attributes tuned for search.</p>
         </div>
         <div class="spotlight-card">
           <span class="ic-circle"><svg class="icon"><use href="#i-package"/></svg></span>
-          <h3>Inventory &amp; order ops</h3>
-          <p>Order processing, stock updates, returns, replacements, cancellations and RTO resolution, kept moving daily.</p>
+          <h3>Order ops</h3>
+          <p>Returns, RTO &amp; inventory, kept moving daily.</p>
         </div>
         <div class="spotlight-card">
           <span class="ic-circle"><svg class="icon"><use href="#i-shield"/></svg></span>
-          <h3>Compliance &amp; appeals</h3>
-          <p>BIS/ISI and marketplace compliance, with direct appeals to marketplace teams that cut listing-suppression downtime.</p>
+          <h3>Compliance</h3>
+          <p>BIS/ISI checks &amp; suppression appeals.</p>
         </div>
         <div class="spotlight-card">
           <span class="ic-circle"><svg class="icon"><use href="#i-cart"/></svg></span>
-          <h3>Promotions &amp; campaigns</h3>
-          <p>Deals, coupons and campaigns run in step with Marketing, Warehouse and Customer Service.</p>
+          <h3>Promotions</h3>
+          <p>Deals &amp; campaigns, run cross-team.</p>
         </div>
       </div>
     </div>
@@ -1355,13 +1308,9 @@
           <h3>E-Commerce Executive, Key Account Management</h3>
           <div class="company"><svg class="icon" width="14" height="14"><use href="#i-store"/></svg>Cellecor Gadgets Limited · New Delhi</div>
           <ul>
-            <li>Own marketplace accounts across Amazon Seller Central and Vendor Central, Flipkart, AJIO, Shopify, Jio Mart, Zepto, CRED, GRS, Jumbo and Shopzop as the primary point of contact for health, growth and compliance.</li>
-            <li>Manage product cataloguing end to end: single and bulk uploads, product variations, SKU mapping, A+ Content and catalogue updates.</li>
-            <li>Write and optimize SEO-focused titles, bullet points, descriptions, keywords and attributes to lift account-level visibility and search performance.</li>
-            <li>Run inventory and order operations — processing, stock updates, returns, replacements, cancellations and RTO resolution.</li>
-            <li>Lead Shopify operations (products, inventory, pricing, content, orders) and resolve support escalations, tickets, refunds and replacements to protect account ratings.</li>
-            <li>Handle BIS/ISI and marketplace compliance and appeal listing suppressions directly with marketplace teams to minimize downtime.</li>
-            <li>Run promotional campaigns, deals and coupons, coordinating with Marketing, Warehouse and Customer Service.</li>
+            <li>Managed marketplace operations across multiple platforms, including Amazon, Flipkart, AJIO, Shopify, JioMart, Zepto, CRED, GRS, and Shopzop.</li>
+            <li>Own cataloguing, SEO and inventory end to end, plus Shopify store operations.</li>
+            <li>Resolve escalations and BIS/ISI compliance appeals; run promotions with Marketing, Warehouse and Customer Service.</li>
           </ul>
         </div>
 
@@ -1370,10 +1319,9 @@
           <h3>Process Associate, ESG Data &amp; Reporting</h3>
           <div class="company"><svg class="icon" width="14" height="14"><use href="#i-chart"/></svg>Suntec India · New Delhi</div>
           <ul>
-            <li>Processed ESG data for 30–50 sellers and clients daily — cleaning, standardizing and validating large datasets.</li>
-            <li>Maintained ESG reporting dashboards at 95% accuracy, keeping reporting decision-ready for internal and client stakeholders.</li>
-            <li>Delivered data-driven insights and trend analysis that supported client businesses in achieving 10–20% growth.</li>
-            <li>Managed ESG databases for data integrity and reporting compliance, improving turnaround on daily reporting cycles.</li>
+            <li>Processed ESG data for 30–50 clients daily — cleaning, standardizing and validating datasets.</li>
+            <li>Maintained reporting dashboards at 95% accuracy for internal and client stakeholders.</li>
+            <li>Delivered trend analysis that supported 10–20% client growth.</li>
           </ul>
         </div>
 
@@ -1382,8 +1330,8 @@
           <h3>E-Commerce Intern</h3>
           <div class="company"><svg class="icon" width="14" height="14"><use href="#i-package"/></svg>Caajib Ecom Services · New Delhi</div>
           <ul>
-            <li>Supported Amazon and Flipkart listings through bulk and single uploads, inventory updates and keyword research.</li>
-            <li>Assisted with A+ Content, coupons, deals, order processing, performance reporting, policy-violation handling, account-health monitoring and invoicing in Tally Prime.</li>
+            <li>Supported Amazon and Flipkart listings — bulk uploads, inventory updates, keyword research.</li>
+            <li>Assisted with A+ Content, deals, order processing and account-health monitoring.</li>
           </ul>
         </div>
 
@@ -1395,7 +1343,7 @@
     <div class="wrap">
       <div class="block-head reveal">
         <h2><span class="icon-chip"><svg class="icon"><use href="#i-tag"/></svg></span>Core skills</h2>
-        <span class="tally">7 areas</span>
+        <span class="tally">6 areas</span>
       </div>
 
       <div class="skills-grid">
@@ -1406,17 +1354,6 @@
             <span class="pill">Escalation resolution</span>
             <span class="pill">Client &amp; vendor relations</span>
             <span class="pill">Stakeholder coordination</span>
-          </div>
-        </div>
-        <div class="skill-card reveal">
-          <h3><svg class="icon"><use href="#i-store"/></svg>Marketplace platforms</h3>
-          <div class="pill-row">
-            <span class="pill">Amazon Seller Central</span>
-            <span class="pill">Amazon Vendor Central</span>
-            <span class="pill">Flipkart</span>
-            <span class="pill">AJIO</span>
-            <span class="pill">Jio Mart</span>
-            <span class="pill">Zepto</span>
           </div>
         </div>
         <div class="skill-card reveal">
@@ -1448,15 +1385,6 @@
             <span class="pill">RTO resolution</span>
           </div>
         </div>
-        <div class="skill-card reveal">
-          <h3><svg class="icon"><use href="#i-shield"/></svg>Compliance</h3>
-          <div class="pill-row">
-            <span class="pill">BIS / ISI</span>
-            <span class="pill">Manufacturer details</span>
-            <span class="pill">Warranty</span>
-            <span class="pill">Policy appeals</span>
-          </div>
-        </div>
         <div class="skill-card reveal" style="grid-column:1/-1">
           <h3><svg class="icon"><use href="#i-chart"/></svg>Data, reporting &amp; tools</h3>
           <div class="pill-row">
@@ -1464,12 +1392,15 @@
             <span class="pill">ESG reporting</span>
             <span class="pill">Dashboarding</span>
             <span class="pill">Trend analysis</span>
+            <span class="pill">Shopify</span>
+            <span class="pill">Tally Prime</span>
+            <span class="pill">Helium 10</span>
             <span class="pill">Advanced Excel</span>
             <span class="pill">Basic SQL</span>
             <span class="pill">Power BI</span>
             <span class="pill">Python</span>
-            <span class="pill">Shopify</span>
-            <span class="pill">Tally Prime</span>
+            <span class="pill">Numpy</span>
+            <span class="pill">Pandas</span>
           </div>
         </div>
       </div>
